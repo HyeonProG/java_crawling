@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/gson-2.8.6.jar"/>
+	<classpathentry kind="lib" path="lib/guava-33.2.1-jre.jar"/>
+	<classpathentry kind="lib" path="lib/jsoup-1.15.3.jar"/>
+	<classpathentry kind="lib" path="lib/lombok.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-api-4.23.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-chromium-driver-4.23.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-http-4.23.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-java-4.23.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-json-4.23.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-manager-4.23.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-support-4.23.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-remote-driver-4.23.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-edge-driver-4.23.1.jar"/>
+	<classpathentry kind="lib" path="lib/failsafe-3.2.4.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-os-4.23.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-devtools-v127-4.23.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

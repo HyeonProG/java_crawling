@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Backend Engineer 신입",
+    "job_id": "231500",
+    "company_name": "그릿스탠다드",
+    "location": "서울 성동구",
+    "company_url": "/company/43480",
+    "qualifications": [
+      "JAVA Web 개발자",
+      "Spring framework - Mybatis 사용 가능하신 분",
+      "RDBMS(Maria) 개발 가능하신 분",
+      "Rest-API 개발 가능하신 분",
+      "ERP 등의 업무시스템 개발에 관심 있는 분"
+    ],
+    "duties": [
+      "물류 업무 시스템 개발 및 유지보수",
+      "물류 업무 시스템 안정적이고 확장 가능한 서비스 구현"
+    ],
+    "preferred_qualifications": [
+      "Not found"
+    ],
+    "end_date": "2024.08.23"
+  },
+  {
+    "title": "백엔드 엔지니어 (전문연구요원 가능)",
+    "job_id": "156310",
+    "company_name": "에타일렉트로닉스",
+    "location": "서울 용산구",
+    "company_url": "/company/29535",
+    "qualifications": [
+      "학력 : 대졸 이상",
+      "경력 : 무관",
+      "컴퓨터/시스템공학 등 유관분야 전공",
+      "전문연구요원 가능"
+    ],
+    "duties": [
+      "로봇 무선충전관리 플랫폼 개발",
+      "서버 개발 및 DB관리"
+    ],
+    "preferred_qualifications": [
+      "Not found"
+    ],
+    "end_date": "상시채용"
+  },
+  {
+    "title": "프론트엔드 개발자",
+    "job_id": "233660",
+    "company_name": "메이데이파트너스",
+    "location": "서울 강남구",
+    "company_url": "/company/1978",
+    "qualifications": [
+      "React.js, Next.js 개발 경험이 있으신 분",
+      "JavaScript 동작방식의 이해도가 있으신 분",
+      "기본 CS 지식을 보유하신 분",
+      "백엔드 개발자와 협업을 해보신 분"
+    ],
+    "duties": [
+      "MICE 플랫폼 신규 개발",
+      "메타버스 플랫폼 신규 개발",
+      "AI관련 정부 지원사업",
+      "통합프로스포츠사이트 운영"
+    ],
+    "preferred_qualifications": [
+      "Not found"
+    ],
+    "end_date": "상시채용"
+  }
+]
