@@ -22,5 +22,6 @@
 	<classpathentry kind="lib" path="lib/failsafe-3.2.4.jar"/>
 	<classpathentry kind="lib" path="lib/selenium-os-4.23.1.jar"/>
 	<classpathentry kind="lib" path="lib/selenium-devtools-v127-4.23.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-chrome-driver-4.23.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
