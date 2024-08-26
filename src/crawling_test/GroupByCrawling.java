@@ -12,6 +12,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -20,7 +21,7 @@ public class GroupByCrawling {
 
     public static void main(String[] args) throws Exception {
         // ChromeDriver 위치 설정
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\HighTech\\Desktop\\sts\\chromedriver-win64\\chromedriver.exe");
+        System.setProperty("webdriver.edge.driver", "D:\\tools\\edgedriver_win64\\msedgedriver.exe");
 
         String[] ids = { "1443" };
         List<Map<String, Object>> jobDataList = select(ids);
@@ -38,7 +39,7 @@ public class GroupByCrawling {
 
     public static List<Map<String, Object>> select(String[] jobIds) throws Exception {
         List<Map<String, Object>> jobDataList = new ArrayList<>();
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new EdgeDriver();
 
         try {
             for (String jobId : jobIds) {

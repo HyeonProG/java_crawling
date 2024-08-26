@@ -23,7 +23,7 @@ public class JumpitJobIdCrawler {
     // getJobIds 메서드: static 메서드
     public static String[] getJobIds() {
         List<String> jobIdList = new ArrayList<>();
-        driver.get("https://www.jumpit.co.kr/positions?jobCategory=1&jobCategory=3&sort=rsp_rate");
+        driver.get("https://www.jumpit.co.kr/positions?career=0&sort=rsp_rate");
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         int loadedJobs = 0;

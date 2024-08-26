@@ -1,11 +1,13 @@
 package crawling_test;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -37,10 +39,13 @@ public class JumpitCrawling {
             System.out.println(gson.toJson(jobDataList.get(i)));
         }
 
+        // 파일 이름에 타임스탬프 추가
+        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String fileName = "C:\\Users\\KDP\\Desktop\\json\\job_data_" + timestamp + ".json";
+
         // JSON 파일로 저장
-        saveJsonToFile(jsonResult, "C:\\Users\\KDP\\Desktop\\json\\job_data.json");
-        System.out.println(jsonResult);
-        System.out.println("JSON 파일이 저장되었습니다.");
+        saveJsonToFile(jsonResult, fileName);
+        System.out.println("JSON 파일이 저장되었습니다: " + fileName);
     }
 
     public static List<Map<String, Object>> select(String[] jobIds) throws Exception {
@@ -61,6 +66,11 @@ public class JumpitCrawling {
                 // 공고명 크롤링
                 Element mainHeading = doc.selectFirst("div.sc-f491c6ef-0");
                 String mainText = mainHeading != null ? mainHeading.selectFirst("h1").text().trim() : "Not found";
+
+                // '병역특례'라는 단어가 공고명에 포함되어 있으면 이 공고를 제외
+                if (mainText.contains("병역특례")) {
+                    continue;
+                }
 
                 // 회사명 크롤링
                 Element companyLink = doc.selectFirst("a.name");
