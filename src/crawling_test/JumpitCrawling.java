@@ -28,6 +28,7 @@ public class JumpitCrawling {
 
         // 직무 ID 목록 가져오기
         String[] ids = JumpitJobIdCrawler.getJobIds();
+//        String[] ids = {"30255", "30779", "31257", "30287", "31229"};
         List<Map<String, Object>> jobDataList = select(ids);
 
         // JSON으로 변환 (Gson 사용)
@@ -109,12 +110,14 @@ public class JumpitCrawling {
                 // JSON 형식으로 데이터 구성
                 Map<String, Object> jobData = new LinkedHashMap<>();
                 jobData.put("title", mainText);
-                jobData.put("job_id", jobId);
+                jobData.put("job_url", url);
                 jobData.put("company_name", companyName);
-                jobData.put("tech_stack", techStackList);
                 jobData.put("work_info", workInfo); // 주요업무 배열 추가
+                jobData.put("skills", techStackList);
                 jobData.put("qualifications", qualifications);
                 jobData.put("preferred", preferred);
+                jobData.put("end_date", "");
+                jobData.put("site", "jumpit");
 
                 // 결과를 리스트에 추가
                 jobDataList.add(jobData);
